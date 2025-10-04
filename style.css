@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container .card {
+    border-radius: 15px;
+    box-shadow: 1px 1px 18px #000;
+}
+
+.container .card .heading {
+    background-color: #384998;
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+}
+
+.container .card .container h1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card .note {
+    color: red;
+    margin-top: 25px;
+}
+
+.card form select {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container.info {
+    border: 1px solid rgb(199, 199, 199);
+    margin-top: 30px;
+    padding: 0;
+    background-color: #c0e1ee;
+}
+
+.container.info p {
+    font-size: 14.5px;
+    margin: 0;
+    padding: 8px 10px;
+}
+
+.row.student-row {
+    border-bottom: 1px solid rgb(173, 173, 173);
+    margin: 0 !important;
+}
+
+.result-heading {
+    border-bottom: 2px solid rgb(173, 173, 173);
+    padding: 12px 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.subject-info {
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding: 5px 10px;
+}
+
+.subject-info .col {
+    font-size: 14.5px;
+}
+
+#pass-btn {
+    background-color: #3f8833;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+#fail-btn {
+    background-color: #c5b82a;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
