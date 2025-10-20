@@ -232,6 +232,16 @@ if (!isNaN(examYear) && examYear != "" && examYear > 2020 && examYear < 2026) {
 
 
         document.writeln(`
+    <nav class="container-fluid">
+        <div class="container">
+            <img src="https://usindh.edu.pk/images/usindh/logo.png" alt="">
+            <div class="container-fluid">
+                <h2>ITSC</h2>
+                <h2>University Of Sindh</h2>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="card mt-4 px-3 mb-4">
             <div class="container heading">

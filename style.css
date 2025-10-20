@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+/* ........... navigation styling below ......... */
+nav {
+    background-color: rgb(66, 117, 205);
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 90px;
+    width: 95px;
+}
+
+nav h2 {
+    font-size: 20px;
+    color: #fff;
+}
+/* ......... navigation styling ends here ........ */
+
+
 .container .card {
     border-radius: 15px;
     box-shadow: 1px 1px 18px #000;
