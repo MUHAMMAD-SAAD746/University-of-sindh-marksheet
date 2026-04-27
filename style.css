@@ -95,19 +95,28 @@ label {
 }
 
 #pass-btn {
-    background-color: #3f8833;
+    background-color: #24b40e;
     border-radius: 5px;
     width: 70px;
     text-align: center;
     color: white;
     padding: 5px;
+    height: 30px;
 }
 
 #fail-btn {
-    background-color: #c5b82a;
+    background-color: #ddcb00;
     border-radius: 5px;
     width: 70px;
     text-align: center;
     color: white;
     padding: 5px;
+    height: 30px;
+}
+
+
+.inputField {
+    width: 50px;
+    padding: 3px;
+    border: 1px solid rgb(196, 196, 196);
 }

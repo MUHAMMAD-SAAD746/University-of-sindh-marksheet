@@ -11,12 +11,156 @@
 </head>
 
 <body>
+    <nav class="container-fluid">
+        <div class="container">
+            <img src="https://usindh.edu.pk/images/usindh/logo.png" alt="">
+            <div class="container-fluid">
+                <h2>ITSC</h2>
+                <h2>University Of Sindh</h2>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container mt-5" id="inputContainer">
+        <div class="card p-4">
+            <h3 class="mb-3">Enter Student Info</h3>
+
+            <label>Student Name</label>
+            <input type="text" id="userName" class="form-control mb-3">
+
+            <label>Roll No</label>
+            <input type="text" id="rollNo" class="form-control mb-3">
+
+            <button class="btn btn-primary" id="userInfo-btn">
+                Submit
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <div class="container d-none" id="marksheet">
+        <div class="card mt-4 px-3 mb-4">
+            <div class="container heading">
+                <h1>Semester Examination Result Notice Board</h1>
+            </div>
+
+            <p class="note">This is digital notice board for to display department result only for students'
+                information. It is not officially announced result by controller office.</p>
+            <div class="card-body">
+                <form action="">
+                    <label for="semester">Select Semester</label>
+                    <select name="semester" id="semester">
+                        <option value="">Select</option>
+                        <option value="1st Semester">1st Semester</option>
+                        <option value="2nd Semester">2nd Semester</option>
+                        <option value="3rd Semester">3rd Semester</option>
+                        <option value="4th Semester">4th Semester</option>
+                        <option value="5th Semester">5th Semester</option>
+                        <option value="6th Semester">6th Semester</option>
+                        <option value="7th Semester">7th Semester</option>
+                        <option value="8th Semester">8th Semester</option>
+                        <option value="9th Semester">9th Semester</option>
+                        <option value="10th Semester">10th semester</option>
+                    </select>
+
+                    <label for="semester">Exam Year</label>
+                    <select name="semester" id="year">
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+
+                    <label for="semester">Exam Type</label>
+                    <select name="semester" id="examType">
+                        <option value="Regular">Regular</option>
+                        <option value="Improver / Failure">Improver / Failure</option>
+                        <option value="Re-Sit">Re-Sit</option>
+                    </select>
+                </form>
+
+                <div class="container info">
+                    <div class="row student-row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p>Student Name</p>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                            <p id="userNameElem">${userName}</p>
+                        </div>
+                    </div>
+                    <div class="row student-row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p>ROLL NO</p>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                            <p id="rollNoElem">${userName}</p>
+                        </div>
+                    </div>
+                    <div class="row student-row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p>EXAM YEAR</p>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-center">
+                            <p id="examYear">2025</p>
+                        </div>
+                    </div>
+                    <div class="row student-row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p>EXAM TYPE</p>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p id="examTypeElem">Regular</p>
+                        </div>
+                    </div>
+                    <div class="row student-row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p>SEMESTER</p>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6 col-6">
+                            <p id="semesterElem">Please Select Semester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="container resultInfo" id="resultContainer">
+                    <div class="row result-heading">
+                        <div class="col">COURSE NO</div>
+                        <div class="col col-4 text-center">SUBJECTS</div>
+                        <div class="col">ATTEN. <br>MRK.</div>
+                        <div class="col">assign. <br>MRK.</div>
+                        <div class="col">MID. <br>MRK.</div>
+                        <div class="col">FINAL. <br>MRK.</div>
+                        <div class="col">OBT. <br>MRK.</div>
+                        <div class="col">REMARKS</div>
+                    </div>
+
+                    <div id="rowsContainer"></div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-success" id="generateBtn">
+                            Generate Result
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- bootstrap script below -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
     <!-- java script below -->
+    <!-- <script src="./app.js"></script> -->
     <script src="./app.js"></script>
 </body>
 
